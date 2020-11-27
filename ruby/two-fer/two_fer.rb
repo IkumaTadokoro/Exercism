@@ -6,3 +6,8 @@ To get started with TDD, see the `README.md` file in your
 `ruby/two-fer` directory.
 =end
 
+class TwoFer
+  def self.two_fer
+
+  end
+end
