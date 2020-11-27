@@ -8,6 +8,6 @@ To get started with TDD, see the `README.md` file in your
 
 class TwoFer
   def self.two_fer
-
+    "One for you, one for me."
   end
 end
