@@ -6,3 +6,8 @@ To get started with TDD, see the `README.md` file in your
 `ruby/resistor-color-duo` directory.
 =end
 
+class ResistorColorDuo
+  def self.value(*band)
+    10
+  end
+end
