@@ -22,6 +22,6 @@ class ResistorColorDuo
   }
 
   def self.value(bands)
-    bands[VALID_RANGE].map { |band| COLOR_TABLE[band] }.join.to_i
+    bands[VALID_RANGE].map(&COLOR_TABLE).join.to_i
   end
 end
