@@ -7,6 +7,7 @@ To get started with TDD, see the `README.md` file in your
 =end
 
 class ResistorColorDuo
+  VALID_RANGE = 0..1
   COLOR_TABLE = {
     'black'  => 0,
     'brown'  => 1,
@@ -21,6 +22,6 @@ class ResistorColorDuo
   }
 
   def self.value(band)
-    band[0..1].map { |color| COLOR_TABLE[color] }.join.to_i
+    band[VALID_RANGE].map { |color| COLOR_TABLE[color] }.join.to_i
   end
 end
