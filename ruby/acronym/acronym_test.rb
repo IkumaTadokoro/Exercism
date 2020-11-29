@@ -9,7 +9,7 @@ class AcronymTest < Minitest::Test
   end
 
   def test_lowercase_words
-    skip
+    # skip
     assert_equal "ROR", Acronym.abbreviate('Ruby on Rails')
   end
 
