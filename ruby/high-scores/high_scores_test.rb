@@ -66,7 +66,7 @@ class HighScoresTest < Minitest::Test
   end
 
   def test_latest_score_is_the_personal_best
-    skip
+    # skip
     scores = [70, 40, 10, 100]
     assert HighScores.new(scores).latest_is_personal_best?
   end
