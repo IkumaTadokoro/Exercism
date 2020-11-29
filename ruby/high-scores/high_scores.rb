@@ -25,4 +25,8 @@ class HighScores
     scores.sort_by(&:to_i).last(3).reverse
   end
 
+  def latest_is_personal_best?
+    latest == personal_best
+  end
+
 end

@@ -60,7 +60,7 @@ class HighScoresTest < Minitest::Test
   end
 
   def test_latest_score_is_not_the_personal_best
-    skip
+    # skip
     scores = [100, 40, 10, 70]
     refute HighScores.new(scores).latest_is_personal_best?
   end
