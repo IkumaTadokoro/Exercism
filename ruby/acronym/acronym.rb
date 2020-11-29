@@ -8,6 +8,7 @@ To get started with TDD, see the `README.md` file in your
 
 class Acronym
   def self.abbreviate(long_name)
-    long_name.split(/\W/).map(&:chr).join.upcase
+    # long_name.split(/\W/).map(&:chr).join.upcase
+    long_name.scan(/\b\w/).join.upcase
   end
 end
