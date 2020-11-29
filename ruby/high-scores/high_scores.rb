@@ -14,7 +14,7 @@ class HighScores
   end
 
   def latest
-    30
+    scores.select(&:positive?).min
   end
 
 end
