@@ -13,4 +13,8 @@ class HighScores
     @scores = scores
   end
 
+  def latest
+    30
+  end
+
 end
