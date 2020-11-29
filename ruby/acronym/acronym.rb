@@ -8,6 +8,6 @@ To get started with TDD, see the `README.md` file in your
 
 class Acronym
   def self.abbreviate(long_name)
-    'PNG'
+    long_name.split.map { |word| word.slice(0).upcase }.join
   end
 end
