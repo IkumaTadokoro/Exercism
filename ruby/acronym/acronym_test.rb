@@ -34,7 +34,7 @@ class AcronymTest < Minitest::Test
   end
 
   def test_consecutive_delimiters
-    skip
+    # skip
     assert_equal "SIMUFTA", Acronym.abbreviate('Something - I made up from thin air')
   end
 end
