@@ -21,4 +21,8 @@ class HighScores
     scores.max
   end
 
+  def personal_top_three
+    scores.sort_by(&:to_i).last(3).reverse
+  end
+
 end
