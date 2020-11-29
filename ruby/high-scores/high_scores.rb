@@ -14,7 +14,7 @@ class HighScores
   end
 
   def latest
-    scores.select(&:positive?).min
+    scores.last
   end
 
   def personal_best
