@@ -8,12 +8,9 @@ To get started with TDD, see the `README.md` file in your
 =end
 
 class Hamming
-  def self.compute(base_strand, comparative_strand)
-    raise ArgumentError if base_strand.size != comparative_strand.size
+  def self.compute(base, comparative)
+    raise ArgumentError if base.size != comparative.size
 
-    base = base_strand.chars
-    comparative = comparative_strand.chars
-
-    base.zip(comparative).select { | x, y | x != y }.size
+    base.chars.zip(comparative.chars).select { | x, y | x != y }.size
   end
 end
