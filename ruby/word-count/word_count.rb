@@ -8,10 +8,10 @@ To get started with TDD, see the `README.md` file in your
 
 class Phrase
   def initialize(phrase)
-    @phrase = phrase.downcase.scan(/\w+[\w']*\w+/)
+    @phrase = phrase.downcase.scan(/\w+[\w']*\b/)
   end
 
   def word_count
-    @phrase.to_h { |word| [word, @phrase.select { |comparative_word| word.casecmp?(comparative_word) }.size ] }
+    @phrase.to_h { |word| [word, @phrase.count(word) ] }
   end
 end
