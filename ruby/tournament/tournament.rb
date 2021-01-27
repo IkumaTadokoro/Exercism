@@ -12,12 +12,16 @@ class Tournament
   end
 
   def tally(input)
-    header
+    [header, detail(input)].join
   end
 
   private
 
   def header
-    "Team                           | MP |  W |  D |  L |  P\n"
+    "Team                           | MP |  W |  D |  L |  P"
+  end
+
+  def detail(input)
+    input
   end
 end
