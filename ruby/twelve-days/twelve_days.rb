@@ -50,5 +50,4 @@ class TwelveDays
     first_gift, *after_second_gifts = gifts
     "#{after_second_gifts.reverse.join(', ')}, and #{first_gift}"
   end
-
 end
