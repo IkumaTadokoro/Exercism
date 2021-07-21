@@ -3,8 +3,8 @@
 // convenience to get you started writing code faster.
 //
 
-export const colorCode = () => {
-  throw new Error('Remove this statement and implement this function');
+export const colorCode = (colorName) => {
+  return 0;
 };
 
 export const COLORS = undefined;
