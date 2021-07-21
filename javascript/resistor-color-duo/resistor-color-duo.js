@@ -3,8 +3,7 @@
 // convenience to get you started writing code faster.
 //
 
-export const decodedValue = (colorName) => {
-  const [color1, color2] = colorName;
+export const decodedValue = ([color1, color2]) => {
   return parseInt(`${COLORS[color1]}${COLORS[color2]}`)
 };
 
