@@ -4,7 +4,7 @@
 //
 
 export const decodedValue = (colorName) => {
-  const [color1, color2] =　colorName;  
+  const [color1, color2] = colorName;
   return parseInt(`${COLORS[color1]}${COLORS[color2]}`)
 };
 
