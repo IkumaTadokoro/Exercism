@@ -5,7 +5,7 @@ describe('twoFer()', () => {
     expect(twoFer()).toEqual('One for you, one for me.');
   });
 
-  xtest('a name given', () => {
+  test('a name given', () => {
     expect(twoFer('Alice')).toEqual('One for Alice, one for me.');
   });
 
