@@ -10,7 +10,7 @@ describe('ResistorColor', () => {
       expect(colorCode('white')).toEqual(9);
     });
 
-    xtest('Orange', () => {
+    test('Orange', () => {
       expect(colorCode('orange')).toEqual(3);
     });
   });

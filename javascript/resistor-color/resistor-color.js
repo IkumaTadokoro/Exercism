@@ -4,7 +4,18 @@
 //
 
 export const colorCode = (colorName) => {
-  return 0;
+  return COLORS[colorName];
 };
 
-export const COLORS = undefined;
+export const COLORS = {
+  'Black' : 0,
+  'Brown' : 1,
+  'Red' : 2,
+  'Orange' : 3,
+  'Yellow' : 4,
+  'Green' : 5,
+  'Blue' : 6,
+  'Violet' : 7,
+  'Grey' : 8,
+  'White' : 9,
+};
