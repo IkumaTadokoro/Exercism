@@ -3,7 +3,9 @@
 // convenience to get you started writing code faster.
 //
 
-export const gigasecond = (date) => {
-    date.setSeconds(date.getSeconds() + 1_000_000_000)
+export const gigasecond = (input) => {
+    const gigaSecond = 1_000_000_000
+    const date = new Date(input)
+    date.setSeconds(date.getSeconds() + gigaSecond)
     return date
 };
