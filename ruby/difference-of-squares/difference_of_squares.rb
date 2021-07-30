@@ -6,3 +6,23 @@ To get started with TDD, see the `README.md` file in your
 `ruby/difference-of-squares` directory.
 =end
 
+class Squares
+  attr_reader :numbers
+
+  def initialize(range)
+    @numbers = [*1..range]
+  end
+
+  def difference
+    square_of_sum - sum_of_squares
+  end
+
+  def square_of_sum
+    numbers.sum ** 2
+  end
+
+  def sum_of_squares
+    numbers.map { |number| number ** 2 }.sum
+  end
+
+end
