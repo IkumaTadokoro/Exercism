@@ -66,35 +66,3 @@ class Tournament
     result
   end
 end
-
-
-
-# NOTE:「;」で区切るには、String#splitを使用する。
-# 'Allegoric Alaskans;Blithering Badgers;win'.split(';')
-#
-# [String\#lines \(Ruby 3\.0\.0 リファレンスマニュアル\)](https://docs.ruby-lang.org/ja/latest/method/String/i/lines.html)
-# 文字列の各行ごとに配列の要素にするにはString#linesを使用する
-# 改行文字を含めたくない場合は、chomp: trueを指定する
-# ```
-# >> input.lines.map { |line| line.split(";") }
-# => [["Allegoric Alaskans", "Blithering Badgers", "win\n"], ["Allegoric Alaskans", "Blithering Badgers", "win\n"]]
-# ```
-
-# 集計にはEnumerable#group_byが使えそう``
-#
-# input = <<~INPUT
-#     Allegoric Alaskans;Blithering Badgers;win
-#     Devastating Donkeys;Courageous Californians;draw
-#     Devastating Donkeys;Allegoric Alaskans;win
-#     Courageous Californians;Blithering Badgers;loss
-#     Blithering Badgers;Devastating Donkeys;loss
-#     Allegoric Alaskans;Courageous Californians;win
-# INPUT
-#
-# puts Tournament.tally(input)
-
-input = <<~INPUT
-    Allegoric Alaskans;Blithering Badgers;win
-INPUT
-
-puts Tournament.tally(input)
