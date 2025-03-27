@@ -4,10 +4,7 @@ import Data.List (nub)
 
 sumOfMultiples :: [Integer] -> Integer -> Integer
 sumOfMultiples factors limit = 
-  sum $ nub $ findMultiples factors limit
-
-findMultiples :: [Integer] -> Integer -> [Integer]
-findMultiples factors limit = filter isMultiple [1..limit-1]
+  sum . nub $ factors >>= multiplesUnder
   where
-    nonZeroFactors = filter (> 0) factors
-    isMultiple n = n > 0 && any (\f -> n `mod` f == 0) nonZeroFactors
+    multiplesUnder 0 = []
+    multiplesUnder f = takeWhile (< limit) [f, f*2..]
